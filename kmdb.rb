@@ -95,7 +95,31 @@ Role.destroy_all
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
-# Done under created migrate folders
+
+new_movie = Movie.new
+
+new_movie["title"] = "Batman Begins"
+new_movie["year_released"] = "2005"
+new_movie["rated"] = "PG-13"
+#new_movie["studio_id"] = "0". #double check what to put for IDs
+new_movie.save 
+
+new_movie = Movie.new
+new_movie["title"] = "The Dark Knight"
+new_movie["year_released"] = "2008"
+new_movie["rated"] = "PG-13"
+#new_movie["studio_id"] = "0". #double check what to put for IDs
+new_movie.save 
+
+new_movie = Movie.new
+new_movie["title"] = "The Dark Knight Rises"
+new_movie["year_released"] = "2012"
+new_movie["rated"] = "PG-13"
+#new_movie["studio_id"] = "0". #double check what to put for IDs
+new_movie.save 
+
+
+puts "there are #{Movie.all.count} movies"
 
 # Prints a header for the movies output
 puts "Movies"
