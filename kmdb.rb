@@ -77,7 +77,10 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
-Model.destroy_all
+Studio.destroy_all
+Actor.destroy_all
+Movie.destroy_all
+Role.destroy_all
 
 # Generate models and tables, according to the domain model.
 # TODO!
@@ -85,14 +88,14 @@ Model.destroy_all
 #rails generate model Studio
 #rails generate model Movie
 #rails generate model Actor
-##rails generate model Role
+#rails generate model Role
 
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
-#done under created migrate folders
+# Done under created migrate folders
 
 # Prints a header for the movies output
 puts "Movies"
